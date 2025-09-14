@@ -19,7 +19,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   max-width: 900px;
   margin: 2rem auto;
 
@@ -37,12 +37,11 @@ nav ul {
 
 nav ul a {
     color: black;
-    font-weight: light;
     font-family: 'Roboto';
     text-decoration: none;
 }
 
-header h1{
+header span{
     position: relative;
     background-color: var(--primary-color);
     padding: 20px;
