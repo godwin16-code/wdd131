@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="author" content="Godwin Iwajomo">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Personal portfolio and learning projects by Iwajomo Godwin, covering HTML, CSS, JavaScript, and responsive web design concepts.">
+    <title>WDD 131 – Dynamic Web Fundamentals – Iwajomo Godwin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Godwin</h1>
+    <header>
+        <h1 id="course-title">WDD 131 – Dynamic Web Fundamentals-<span style="color: yellow; font-size: 20px; font-weight: bolder;">Iwajomo Godwin</span></h1>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/godwin-iwajomo-8aa30836b">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/88?lang=eng">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+                <link rel="stylesheet" href="styles/base.css">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h1>About Me</h1>
+            <div class="img-text">
+                <p>Hi! I’m Godwin, also known as Vyper. I'm from Nigeria and currently live in Lagos with my family. I'm a student of BYU-Pathway and enjoy traveling, learning new things, and spending quality time with my family.</p>
+                <img src="images/nigeriaMap.jpg" alt="my profile picture" width="200">
+            </div>
+            <h2>Lagos, Nigeria</h2>
+            <div class="img-text">
+                <img src="images/nigeriaMap.jpg" alt="the picture of nigeria my country" class="img-map" width="200">
+                <p>Lagos is the largest city in Nigeria and one of the fastest-growing cities in the world. Originally a small Yoruba fishing village called Eko, it was renamed Lagos by the Portuguese in the 15th century. The city became a major port and was later annexed by the British in 1861. Lagos served as Nigeria’s capital until 1991 and remains the country’s commercial and cultural hub.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h1>Web Dev Resources</h1>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 <span id="currentyear"></span> 🌴 Iwajomo Godwin 🌴 Lagos Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
