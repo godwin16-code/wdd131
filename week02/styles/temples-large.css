@@ -29,5 +29,5 @@ main{
 }
 
 .gallery{
-  grid-template-columns: repeat(var(--cols), 1fr);  /* 3 columns */
+  grid-template-columns: repeat(var(--cols), 1fr);
 }
