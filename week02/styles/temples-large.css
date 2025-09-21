@@ -1,0 +1,33 @@
+/* styles/temples-large.css — larger view overrides */
+/* This file is loaded with media='(min-width: 768px)' from HTML. */
+:root{
+  --cols: 3;
+}
+
+#hamburger{ display: none; }              /* hide hamburger on large screens */
+
+.nav{
+  position: static;
+}
+.nav ul{
+  position: static;
+  display: flex !important;               /* show menu in a row on large */
+  flex-direction: row;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  gap: .25rem;
+  padding: 0;
+}
+.nav a{
+  padding: .5rem .75rem;
+}
+
+/* Wider main and multi-column grid */
+main{
+  max-width: 1100px;
+}
+
+.gallery{
+  grid-template-columns: repeat(var(--cols), 1fr);  /* 3 columns */
+}
