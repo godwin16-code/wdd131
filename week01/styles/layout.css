@@ -1,61 +1,83 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / 300px 1fr auto;
+    grid-template: auto 1fr auto / auto 300px;
+    height: 90vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background: darkblue;
-    padding: 2rem;
-    grid-column: 1/4;
-}
-
-.main {
-    background: yellow;
     grid-column: 1/3;
-}
-
-.aside {
-    background: red;
-    grid-column: 3/4;
-}
-
-.footer {
-    background: pink;
-    grid-column: 1/4;
-    text-align: center;
+    background-color: rgb(48, 46, 46);
+    color: white;
 }
 
 nav {
-    margin: 0 auto 2rem;
-	max-width: 90vw;
+    margin: 3rem auto 0;
+    max-width: 100vw;
 }
 
-.navigation {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #333;
-	align-items: center;
-}
-.navigation li {
-	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
-}
-.navigation a {
-	display: block;
-	color: #eee;
-	padding: 0.75rem;
-	text-decoration: none;
-	text-align: center;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    background-color: black;
 }
 
-.navigation a:hover {
-	font-weight: 700;
-	text-decoration: underline;
-	text-decoration-color: yellow;
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-weight: 700;
+}
+
+main {
+    grid-column: 1/2;
+    background-color: lightgray;
+}
+
+aside {
+    grid-column: 2/3;
+    grid-row: 2;
+    background-color: snow;
+}
+
+footer {
+    grid-column: 1 / 3;
+    background-color: rgb(57, 55, 55);
+    padding: 2rem;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 15px;
+    color: rgb(78, 73, 73);
+    font-weight: lighter;
+}
+
+footer h2 {
+    text-align: center;
+    color: white;
 }
