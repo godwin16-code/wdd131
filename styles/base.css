@@ -25,6 +25,10 @@
     color: var(--text);
 }
 
+header {
+    display: block;
+}
+
 nav {
     display: flex;
     background-color: var(--muted);
@@ -41,7 +45,7 @@ nav ul {
 
 nav ul li {
     flex: 1 1 auto;
-    margin: 0 40PX;
+    margin: 0 40px;
 }
 
 nav ul li a {
@@ -49,7 +53,7 @@ nav ul li a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--card);
     font-family: 'Roboto';
 
 }
@@ -69,7 +73,6 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     gap: 20px;
-    padding: 20px;
 }
 
 h1 {
