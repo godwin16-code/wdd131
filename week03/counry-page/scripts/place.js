@@ -22,3 +22,4 @@ if (temp <= 10 && wind > 4.8) {
 }
 
 document.getElementById("windChill").textContent = windChillResult;
+document.getElementById("windChillDesktop").textContent = windChillResult;
