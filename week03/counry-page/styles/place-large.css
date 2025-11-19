@@ -1,0 +1,71 @@
+/* Default: Mobile view */
+.mobile-only {
+    display: block;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.heading::after {
+    content: "";
+}
+/* Desktop / Large screen */
+@media screen and (min-width: 900px) {
+
+    header, main, footer {
+        max-width: 100%;
+    }
+
+    /* Hide mobile layout */
+    .mobile-only {
+        display: none;
+    }
+
+    /* Show desktop layout */
+    .desktop-only {
+        display: block;
+    }
+
+    /* Example: floating cards for large screen */
+    .desktop-data,
+    .desktop-weather {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.92);
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    }
+
+    .desktop-data {
+        top: 150px;
+        left: 40px;
+    }
+
+    .desktop-data h2 {
+        background: black;
+        color: var(---text-color);
+        margin-left: -25px;
+    }
+
+    .desktop-weather {
+        top: 150px;
+        right: 40px;
+    }
+
+     .heading {
+        position: relative;
+        display: block;
+        padding-right: 40px; /* space for the icon */
+    }
+
+    .heading::after {
+        content: "🌦️";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        transform: translateY(-50%);
+    }
+}

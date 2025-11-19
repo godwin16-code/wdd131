@@ -1,0 +1,102 @@
+:root {
+    ---header-color: #00ff00;
+    ---dark-green: #006400;
+    ---standard-green: #008000;
+    ---text-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+header, main, footer {
+    max-width: 700px;
+    border: none;
+    font-family: "Roboto";
+}
+
+header {
+    background: var(---dark-green);
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    text-align: center;
+    color: var(---text-color);
+    padding-top: 20px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+}
+
+section h2, ol ul {
+    text-align: center;
+}
+
+section h2 {
+    margin: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* center them horizontally */
+  justify-content: center;  /* center them vertically */
+  text-align: center;
+  border-top: 1px solid var(---header-color);
+}
+
+.data-list {
+    display: flex;
+    padding: 0;
+    font-size: 1rem;
+    list-style: none;
+    line-height: 1.8;
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.data-list li strong {
+    display: inline-block;
+    width: 140px;
+    font-weight: bold;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+footer {
+    background: var(---dark-green);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: var(---text-color);
+}

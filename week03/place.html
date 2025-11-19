@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Godwin Iwajomo">
+    <meta name="description" content="The subject of the page is a country or place where you live, have visited, or wish to visit.">
+    <link rel="stylesheet" href="counry-page/styles/place.css">
+    <link rel="stylesheet" href="counry-page/styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="counry-page/scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="counry-page/images/nigeria-zoo.webp">
+                <source media="(min-width: 500px)" srcset="counry-page/images/nigeria-zoo.webp">
+                <img src="counry-page/images/nigeria-zoo.webp" alt="Lion in nigeria zoo" width="500" height="250">
+            </picture>
+        </div>
+        <section class="mobile-only mobile-data">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Lagos</li>
+                <li><strong>Languages:</strong> English, Yoruba</li>
+                <li><strong>Currency:</strong> Nigeria Naira</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+        <section class="mobile-only mobile-weather">
+            <h2 class="heading-mobile">Weather</h2>
+            <span class="mobile-icon">
+                <img src="counry-page/images/weather-icon.jpg" alt="" class="weather-icon">
+            </span>
+            <ul class="data-list">
+                <li><strong>Temperature:</strong> <span id="temp">10</span>℃</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind: </strong><span id="wind">5</span>km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill"></span>℃</li>
+            </ul>
+        </section>
+
+
+        <section class="desktop-only desktop-data">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Lagos</li>
+                <li><strong>Languages:</strong> English, Yoruba</li>
+                <li><strong>Currency:</strong> Nigeria Naira</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+        <section class="desktop-only desktop-weather">
+            <h2 class="heading">Weather</h2>
+            <ul class="data-list">
+                <li><strong>Temperature:</strong> <span id="temp">10</span>℃</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind: </strong><span id="wind">5</span>km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill"></span>℃</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span>🌸Iwajomo Godwin Oluwatobi🌸Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
