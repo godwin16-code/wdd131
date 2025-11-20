@@ -1,8 +1,8 @@
 :root {
-    ---header-color: #00ff00;
-    ---dark-green: #006400;
-    ---standard-green: #008000;
-    ---text-color: #fff;
+    --header-color: #00ff00;
+    --dark-green: #006400;
+    --standard-green: #008000;
+    --text-color: #fff;
 }
 
 *{
@@ -27,14 +27,14 @@ header, main, footer {
 }
 
 header {
-    background: var(---dark-green);
+    background: var(--dark-green);
     width: 100%;
     height: auto;
 }
 
 header h1 {
     text-align: center;
-    color: var(---text-color);
+    color: var(--text-color);
     padding-top: 20px;
 }
 
@@ -68,7 +68,7 @@ section {
   align-items: center;      /* center them horizontally */
   justify-content: center;  /* center them vertically */
   text-align: center;
-  border-top: 1px solid var(---header-color);
+  border-top: 1px solid var(--header-color);
 }
 
 .data-list {
@@ -94,9 +94,9 @@ section {
 }
 
 footer {
-    background: var(---dark-green);
+    background: var(--dark-green);
     width: 100%;
     padding: 20px;
     text-align: center;
-    color: var(---text-color);
+    color: var(--text-color);
 }

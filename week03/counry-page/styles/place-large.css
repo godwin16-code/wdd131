@@ -44,7 +44,7 @@
 
     .desktop-data h2 {
         background: black;
-        color: var(---text-color);
+        color: var(--text-color);
         margin-left: -25px;
     }
 
