@@ -1,0 +1,41 @@
+/* --------------------------------------------------
+   Larger Screen Overrides
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* HEADER */
+  #hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: block !important;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* GALLERY GRID */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  figure {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

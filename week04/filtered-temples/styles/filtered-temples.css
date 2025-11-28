@@ -1,0 +1,151 @@
+/* --------------------------------------------------
+   Base Styles — Mobile First
+-------------------------------------------------- */
+
+:root {
+  --font-body: "Poppins", sans-serif;
+  --font-title: "Source Serif 4", serif;
+
+  --clr-bg: #ffffff;
+  --clr-text: #222;
+  --clr-accent: #0057b8;
+  --clr-muted: #666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.5;
+  padding-bottom: 3rem;
+}
+
+/* --------------------------------------------------
+   Header
+-------------------------------------------------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--clr-accent);
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand .logo {
+  font-size: 1.5rem;
+}
+
+.brand .title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+   Navigation
+-------------------------------------------------- */
+
+#hamburger {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+}
+
+.nav.open {
+  display: block;
+  background: var(--clr-accent);
+  padding: 1rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------
+   Main Content
+-------------------------------------------------- */
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* --------------------------------------------------
+   Gallery (Temple Cards)
+-------------------------------------------------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.temple-details {
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+}
+
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+}

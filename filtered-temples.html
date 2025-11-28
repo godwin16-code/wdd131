@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WDD 131 – Filtered Temple Album">
+  <meta name="author" content="Godwin Iwajomo">
+  <title>Filtered Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="week04/filtered-temples/styles/filtered-temples.css">
+  <link rel="stylesheet" href="week04/filtered-temples/styles/filtered-temples-large.css" media="(min-width: 768px)">
+
+  <!-- JS File -->
+  <script src="week04/filtered-temples/scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">⛪</span>
+      <span class="title">Filtered Temple Album</span>
+    </div>
+
+    <button id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span class="hamburger-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <nav id="primary-nav" class="nav">
+      <ul>
+        <li><a href="#" data-filter="home">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h1>Filtered Temple Album</h1>
+
+    <!-- JS will insert temple cards here -->
+    <section class="gallery" id="temple-cards"></section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> • Filtered Temple Album • Iwajomo Godwin</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
