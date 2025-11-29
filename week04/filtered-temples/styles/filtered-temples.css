@@ -76,6 +76,14 @@ body {
   padding: 1rem;
 }
 
+/* Navigation hover effect */
+.nav a:hover {
+  color: #ffd700;       /* Bright color on hover */
+  text-decoration: underline; /* Optional: underline text */
+  transition: color 0.3s ease;
+}
+
+
 .nav ul {
   list-style: none;
   display: flex;
