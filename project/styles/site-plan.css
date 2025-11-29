@@ -1,0 +1,83 @@
+/* Color Schema */
+:root {
+    --primary-color: #1E8449;
+    --secondary-color: #F39C12;
+    --background-color: #F4F6F7;
+    --text-color: #2C3E50;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.primary { color: var(--primary-color); }
+.secondary { color: var(--secondary-color); }
+.background { color: var(--background-color); }
+.text { color: var(--text-color); }
+
+.wireframe {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.wireframe div {
+    border: 1px dashed #aaa;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.desktop-main {
+    display: flex;
+    gap: 1rem;
+}
+
+.desktop-main div {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .desktop-main {
+        flex-direction: column;
+    }
+}
