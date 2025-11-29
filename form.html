@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review Form</title>
-    <link rel="stylesheet" href="week05/form/styles/form.css">
-    <script src="week05/form/scripts/form.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="description" content="Submit your review for our products. Rate, comment, and select useful features.">
+  <meta name="author" content="Godwin Iwajomo">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="week05/form/styles/form.css">
+  
+  <!-- JS -->
+  <script src="week05/form/scripts/form.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Product Review Form</h1>
-    </header>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
 
-    <main>
-        <form id="reviewForm" method="get" action="review.html">
-            <!-- Product Name -->
-            <label for="product">Product Name:</label>
-            <select id="product" name="product" required>
-                <option value="" disabled selected>Select a Product ...</option>
-                <!-- Options populated by JS -->
-            </select>
+  <main>
+    <form id="reviewForm" method="get" action="review.html">
+      
+      <!-- Product Name -->
+      <label for="productSelect">Product Name</label>
+      <select id="productSelect" name="product" required>
+        <option disabled selected>Select a Product ...</option>
+        <!-- Options added dynamically by JS -->
+      </select>
 
-            <!-- Overall Rating -->
-            <fieldset>
-                <legend>Overall Rating:</legend>
-                <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
-                <label><input type="radio" name="rating" value="2" required> 2 ☆</label>
-                <label><input type="radio" name="rating" value="3" required> 3 ☆</label>
-                <label><input type="radio" name="rating" value="4" required> 4 ☆</label>
-                <label><input type="radio" name="rating" value="5" required> 5 ☆</label>
-            </fieldset>
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <input type="radio" id="star1" name="rating" value="1" required>
+        <label for="star1">1</label>
 
-            <!-- Date of Installation -->
-            <label for="installDate">Date of Installation:</label>
-            <input type="date" id="installDate" name="installDate" required>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">2</label>
 
-            <!-- Useful Features -->
-            <fieldset>
-                <legend>Useful Features:</legend>
-                <label><input type="checkbox" name="features" value="feature1"> Feature 1</label>
-                <label><input type="checkbox" name="features" value="feature2"> Feature 2</label>
-                <label><input type="checkbox" name="features" value="feature3"> Feature 3</label>
-            </fieldset>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">3</label>
 
-            <!-- Written Review -->
-            <label for="review">Written Review:</label>
-            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">4</label>
 
-            <!-- User Name -->
-            <label for="username">Your Name:</label>
-            <input type="text" id="username" name="username">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">5</label>
+      </fieldset>
 
-            <!-- Submit -->
-            <input type="submit" value="Submit Review">
-        </form>
-    </main>
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required>
 
-    <footer>
-        <p>&copy; 2025 Product Reviews • Godwin Iwajomo</p>
-    </footer>
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features</legend>
+        <input type="checkbox" id="feature1" name="features" value="Durable">
+        <label for="feature1">Durable</label>
+
+        <input type="checkbox" id="feature2" name="features" value="Easy to Use">
+        <label for="feature2">Easy to Use</label>
+
+        <input type="checkbox" id="feature3" name="features" value="Affordable">
+        <label for="feature3">Affordable</label>
+
+        <input type="checkbox" id="feature4" name="features" value="Innovative">
+        <label for="feature4">Innovative</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="writtenReview">Written Review</label>
+      <textarea id="writtenReview" name="review" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name</label>
+      <input type="text" id="userName" name="username" placeholder="Optional">
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Godwin Iwajomo</p>
+  </footer>
 </body>
 </html>
