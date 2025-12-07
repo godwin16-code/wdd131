@@ -40,7 +40,7 @@ function setupNavToggle(){
 /* --------- Render destination cards (used on destinations.html) ---------- */
 function buildDestCard(d){
   return `<li class="card" data-id="${d.id}">
-    <img src="${d.image}" alt="${d.name}">
+    <img src="${d.image}" alt="${d.name}" loading="lazy">
     <h3>${d.name}</h3>
     <p>${d.blurb}</p>
     <p><strong>Style:</strong> ${d.style} • <strong>Est. cost:</strong> $${d.cost}</p>
