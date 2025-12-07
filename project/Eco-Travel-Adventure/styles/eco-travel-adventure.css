@@ -60,6 +60,17 @@ body{
 .features article:hover{transform:translateY(-6px)}
 .features h3{margin-top:0;color:var(--primary)}
 
+.nav-toggle {
+  color: #0f172a; /* dark navy */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+body.dark .nav-toggle {
+  color: #e6f6f1; /* light for dark mode */
+}
+
+
 /* Testimonial */
 .testimonial{max-width:800px;margin:20px auto;padding:16px;background:linear-gradient(135deg,#f7fffa,#ffffff);border-radius:10px;box-shadow:var(--shadow)}
 blockquote{margin:0;font-style:italic;color:#083344}
