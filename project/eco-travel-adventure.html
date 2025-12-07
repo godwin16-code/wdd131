@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoTravel Adventures — Home</title>
+  <meta name="description" content="EcoTravel Adventures — sustainable travel guides, tips, and planning tools with beautiful visuals." />
+  <meta name="author" content="Godwin Iwajomo">
+  <link rel="stylesheet" href="Eco-Travel-Adventure/styles/Eco-Travel-Adventure.css">
+  <script src="Eco-Travel-Adventure/scripts/Eco-Travel-Adventure.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <!-- simple SVG logo -->
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#1E8449"/>
+            <stop offset="1" stop-color="#3DBE7D"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+        <path d="M20 36c3-8 16-12 20-4" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <h1>EcoTravel Adventures</h1>
+        <p class="tag">Sustainable travel guides & planning — travel lighter, travel happier.</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">☰</button>
+      <ul id="navList">
+        <li><a href="eco-travel-adventure.html" aria-current="page">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Discover eco-friendly journeys crafted for mindful travelers</h2>
+        <p>Curated guides, practical tips, and smart tools to plan trips that reduce your footprint and amplify joy.</p>
+        <p><a class="cta" href="destinations.html">Explore Destinations</a> <a class="cta outline" href="tools.html">Try the Tools</a></p>
+      </div>
+
+      <!-- decorative SVG illustration -->
+      <svg class="hero-illustration" viewBox="0 0 800 400" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" x2="1">
+            <stop offset="0" stop-color="#E8F8F5"/>
+            <stop offset="1" stop-color="#F4FFF8"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="400" fill="url(#sky)"/>
+        <g transform="translate(60,40)">
+          <circle cx="200" cy="180" r="80" fill="#DFF3E1" class="anim-float"/>
+          <path d="M40 260 Q100 180 180 220 T320 260" fill="#E6F7EE" />
+          <g transform="translate(420,80)" class="anim-plant">
+            <rect x="0" y="80" width="12" height="40" fill="#8B5E34"/>
+            <path d="M6 80 C -10 60, 30 20, 6 0" fill="none" stroke="#2E8B57" stroke-width="6" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>Curated Guides</h3>
+        <p>In-depth, practical destination guides that highlight low-impact activities, local businesses, and seasonal tips to travel responsibly.</p>
+      </article>
+
+      <article>
+        <h3>Smart Tools</h3>
+        <p>Interactive estimators and quizzes to match you with destinations, estimate carbon footprints, and plan budgets — with data stored locally on your device.</p>
+      </article>
+
+      <article>
+        <h3>Community Tips</h3>
+        <p>User-contributed tips and quick-read cards so you can learn and share best practices for sustainable travel.</p>
+      </article>
+    </section>
+
+    <section class="testimonial">
+      <blockquote>
+        “Travel differently — choose experiences that help nature and communities thrive.” 
+        <footer>— A. Traveler</footer>
+      </blockquote>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <small>&copy; <span id="currentYear"></span> EcoTravel Adventures🏵️Godwin Iwajomo🏵️Nigeria</small>
+      <a href="references.html">References</a>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-right">
+      <button id="darkToggle" class="small-btn" aria-pressed="false">Toggle Dark</button>
+    </div>
+  </footer>
+
+</body>
+</html>

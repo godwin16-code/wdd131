@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoTravel Adventures — Destinations</title>
+  <meta name="description" content="Eco-friendly destinations and recommendations." />
+  <meta name="author" content="Godwin Iwajomo">
+  <link rel="stylesheet" href="Eco-Travel-Adventure/styles/Eco-Travel-Adventure.css">
+  <script src="Eco-Travel-Adventure/scripts/Eco-Travel-Adventure.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand small">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1E8449"/></svg>
+      <div><h1>EcoTravel Adventures</h1><p class="tag">Destination guides</p></div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">☰</button>
+      <ul id="navList">
+        <li><a href="eco-travel-adventure.html">Home</a></li>
+        <li><a href="destinations.html" aria-current="page">Destinations</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Featured Destinations</h2>
+      <p>Handpicked eco-friendly destinations with notes about why they’re special, local tips, and low-impact activities.</p>
+    </section>
+
+    <section class="filters">
+      <form id="filterForm" class="filter-form" aria-label="Filter destinations">
+        <label for="filterStyle">Trip style</label>
+        <select id="filterStyle" name="filterStyle">
+          <option value="">Any</option>
+          <option value="adventure">Adventure</option>
+          <option value="relax">Relax</option>
+          <option value="culture">Culture</option>
+        </select>
+
+        <label for="maxBudget">Max budget (USD)</label>
+        <input id="maxBudget" name="maxBudget" type="number" min="0" placeholder="e.g. 1200">
+
+        <label><input type="checkbox" name="pref" value="eco"> Eco-friendly</label>
+        <label><input type="checkbox" name="pref" value="family"> Family friendly</label>
+
+        <button type="submit">Apply</button>
+      </form>
+    </section>
+
+    <section class="destinations">
+      <ul id="destList" class="card-grid" aria-live="polite">
+        <!-- JS will populate destination cards -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <small>&copy; <span id="currentYear"></span> EcoTravel Adventures🏵️Godwin Iwajomo🏵️Nigeria</small>
+      <a href="references.html">References</a>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-right">
+      <button id="darkToggle" class="small-btn" aria-pressed="false">Toggle Dark</button>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoTravel Adventures — Tools</title>
+  <meta name="description" content="Interactive tools: recommendation quiz and carbon estimator." />
+  <meta name="author" content="Godwin Iwajomo">
+  <link rel="stylesheet" href="Eco-Travel-Adventure/styles/Eco-Travel-Adventure.css">
+  <script src="Eco-Travel-Adventure/scripts/Eco-Travel-Adventure.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand small">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1E8449"/></svg>
+      <div><h1>EcoTravel Adventures</h1><p class="tag">Tools & estimators</p></div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navList">☰</button>
+      <ul id="navList">
+        <li><a href="eco-travel-adventure.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="tools.html" aria-current="page">Tools</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Recommendation Quiz</h2>
+      <p>Choose options and get tailored suggestions. Results are rendered below and saved locally.</p>
+
+      <form id="styleQuiz" class="tool-form" aria-describedby="quizDesc">
+        <p id="quizDesc">Select a travel style and preferences.</p>
+
+        <label for="travelStyle">Travel style</label>
+        <select id="travelStyle" required>
+          <option value="">--Select--</option>
+          <option value="adventure">Adventure</option>
+          <option value="relax">Relax</option>
+          <option value="culture">Culture</option>
+        </select>
+
+        <label for="budget">Budget (USD)</label>
+        <input id="budget" type="number" min="0" placeholder="0 for no limit">
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label><input type="checkbox" name="pref" value="family"> Family friendly</label>
+          <label><input type="checkbox" name="pref" value="eco"> Low carbon</label>
+        </fieldset>
+
+        <button type="submit">Recommend</button>
+      </form>
+
+      <div id="quizOutput" class="result-box" aria-live="polite">No recommendation yet.</div>
+      <div class="controls">
+        <button id="clearStorage" class="muted">Clear saved recommendation</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Quick Carbon Estimator</h2>
+      <form id="carbonForm">
+        <label for="distance">Flight distance (km)</label>
+        <input id="distance" type="number" min="0" required placeholder="e.g. 1500">
+
+        <label for="classType">Class</label>
+        <select id="classType">
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First</option>
+        </select>
+
+        <button type="submit">Estimate CO₂</button>
+      </form>
+      <div id="carbonOutput" class="result-box">Enter data to estimate emissions.</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <small>&copy; <span id="currentYear"></span> EcoTravel Adventures🏵️Godwin Iwajomo🏵️Nigeria</small>
+      <a href="references.html">References</a>
+      <p id="lastModified"></p>
+    </div>
+    <div class="footer-right">
+      <button id="darkToggle" class="small-btn" aria-pressed="false">Toggle Dark</button>
+    </div>
+  </footer>
+
+</body>
+</html>

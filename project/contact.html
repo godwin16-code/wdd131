@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoTravel Adventures — Contact</title>
+  <meta name="description" content="Contact EcoTravel Adventures — form and info." />
+  <link rel="stylesheet" href="Eco-Travel-Adventure/styles/Eco-Travel-Adventure.css">
+  <script src="Eco-Travel-Adventure/scripts/Eco-Travel-Adventure.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <img src="logo.png" alt="EcoTravel Adventures logo" class="logo" loading="lazy">
+    <div>
+      <h1>EcoTravel Adventures</h1>
+      <p class="tagline">Contact and feedback.</p>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="Eco-travel-Adventure.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact Us</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+
+      <div id="contactStatus" class="result-box" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoTravel Adventures. <a href="references.html">References</a></p>
+  </footer>
+
+</body>
+</html>
